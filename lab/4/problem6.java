@@ -31,13 +31,13 @@ public class Main
     public static void endOfInsert(ArrayList<Integer> arr, int insert)
     {
         arr.add(insert);
-      	System.out.println(arr);
+      	 System.out.println(arr);
     }
 
     public static void specificInsert(int pos, ArrayList<Integer> arr, int insert)
     {
         arr.add(pos, insert);
-      	System.out.println(arr);
+      	 System.out.println(arr);
     }
 }
 
