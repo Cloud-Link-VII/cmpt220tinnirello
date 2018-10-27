@@ -71,7 +71,7 @@ public class MyLong
 
     public static boolean isEven(MyLong myLong)
     {
-        return MyLong.isEven(myLong.getValue());
+        return myLong.isEven(myLong.getValue());
     }
 
     public static boolean isOdd(MyLong myLong)
