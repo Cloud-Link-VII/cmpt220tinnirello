@@ -93,6 +93,16 @@ public class MyLong
     {
         return equals(myLong.getValue());
     }
+    
+    public static long parseLong(char[] values)
+    {
+        long sum = 0;
+        for (char i : values)
+        {
+            sum += Character.getNumericValue(i);
+        }
+        return sum;
+    }
 
     public static long parseLong(String s)
     {
