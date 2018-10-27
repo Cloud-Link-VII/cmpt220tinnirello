@@ -2,9 +2,7 @@ public class MyLong
 {
     long value;
 
-    MyLong() 
-    {
-    }
+    MyLong() {}
 
     MyLong(long value)
     {
