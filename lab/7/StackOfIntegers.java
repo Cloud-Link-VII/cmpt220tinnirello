@@ -1,5 +1,3 @@
-import java.util.Collections;
-
 public class StackOfIntegers
 {
     private int[] elements;
@@ -29,13 +27,16 @@ public class StackOfIntegers
         return -1;
     }
 
-    public void push(int value)
+    public int push(int value)
     {
-        if (size != elements.length)
+        if (size >= elements.length)
         {
-            elements[size] = value;
-            size++;
+            int[] temp = new int[elements.length * 2];
+            System.arraycopy(elements, 0, temp, 0, elements.length);
+            elements = temp;
         }
+
+        return elements[size++] = value;
     }
 
     public int pop()
@@ -52,17 +53,4 @@ public class StackOfIntegers
     {
         return size;
     }
-}
-
-            {
-                i++;
-            }
-        }
-        stack.push(num);
-    }
-
-    /*public static void reverse(StackOfIntegers stack)
-    {
-
-    }*/
 }
