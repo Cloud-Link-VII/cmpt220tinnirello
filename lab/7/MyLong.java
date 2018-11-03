@@ -71,7 +71,7 @@ public class MyLong
 
     public static boolean isEven(MyLong myLong)
     {
-        return MyLong.isEven(myLong.getValue());
+        return myLong.isEven(myLong.getValue());
     }
 
     public static boolean isOdd(MyLong myLong)
@@ -92,6 +92,16 @@ public class MyLong
     public boolean equals(MyLong myLong)
     {
         return equals(myLong.getValue());
+    }
+    
+    public static long parseLong(char[] values)
+    {
+        long sum = 0;
+        for (char i : values)
+        {
+            sum += Character.getNumericValue(i);
+        }
+        return sum;
     }
 
     public static long parseLong(String s)
