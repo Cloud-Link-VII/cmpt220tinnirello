@@ -1,8 +1,3 @@
-/*********************
- Author: Marinel Tinnirello
- Lab 7 - Problem 11.1
- ********************/
-
 import java.util.Scanner;
 
 public class Triangle extends GeometricObj
